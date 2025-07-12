@@ -15,4 +15,4 @@ jobs:
         with:
           xcode-version: 16.4
       - name: Run tests
-        run: swift test
+        run: xcodebuild test -project CI-Test-Project.xcodeproj -scheme CI-Test-Project -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest'
